@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+       <h1>Do you love me?</h1>
+       <h2></h2>
+       <div class="control">
+            <div class="yes">
+                    Yes..
+            </div>
+            <div class="no">
+                No!
+            </div>
+       </div>
+       
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+     $(document).ready(function(){
+        var i = true
+        $(".no").mouseover(function(){
+            if(i){
+                $(this).css({
+                    'position':"absolute",
+                    'left': '300px',
+                    'transition': '0.3s'
+                })
+            }else{
+                $(this).css({
+                    'position':"absolute",
+                    'left': '120px',
+                    'transition': '0.3s'
+                })
+            }
+            i=!i
+        })
+        $('.yes').click(function(){
+            $("h2").html("តោះរៀបការម៉ងទៅ!")
+        })
+     })
+</script>
+</html>

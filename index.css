@@ -1,0 +1,42 @@
+
+        .app{
+           display: flex;
+           padding: 20px;
+           position: relative;
+           align-items: center;
+           color: rgb(255, 22, 61);
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .control{
+            width: 500px;
+            display: flex;
+            position: relative;
+            /* height: fit-content; */
+        }
+        h2{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: content;
+            color: rgb(234, 0, 255);
+        }
+        .yes{
+            /* width: fit-content; */
+            /* height: fit-content; */
+            padding: 10px 40px;
+            background-color: green;
+            color: white;
+            border-radius: 30px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .no{
+            /* width: fit-content; */
+            margin: 5px;
+            /* height: fit-content; */
+            padding: 10px 40px;
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: ease-in-out 0.1s;
+        }
